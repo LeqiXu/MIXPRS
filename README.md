@@ -74,8 +74,10 @@ Then place the downloaded LD reference panels and the SNP information file into 
 ### 3. Pruned SNP List Preparation
 We provide [precomputed pruned SNP lists](snplist) for five populations (EUR, EAS, AFR, SAS, and AMR), derived from genotype data of the [Phase-3 1000 Genomes Project](https://www.internationalgenome.org/data). These SNP lists were generated using PLINK2 with parameters: window size = 250, step size = 5, and correlation threshold $r^2 = 0.5$. Users can directly use these provided SNP lists for PRS analyses without additional processing. **These precomputed SNP lists are aligned to GRCh37 (hg19).**
 
-For advanced users who wish to generate customized pruned SNP lists with different pruning parameters, we also provide the following PLINK2 commands as an example:
+For advanced users who wish to generate customized pruned SNP lists with different pruning parameters, we provide both PLINK 2.0 and PLINK 1.9 examples below.  
+
 ```bash
+# PLINK 2.0
 module load PLINK/2
 
 i=1
@@ -84,10 +86,23 @@ r2=0.5
 wc=250
 
 for pop in EUR EAS AFR SAS AMR; do
+  plink2 --bfile ./1000g_phase3_data/geno_data/${pop} \
+         --indep-pairwise ${wc} 5 ${r2} \
+         --out ./snplist/${pop}_prune_pval${pval}_r2${r2}_wc${wc}_${i}
+done
 
-plink2 --bfile ./1000g_phase3_data/geno_data/${pop} \
-       --indep-pairwise ${wc} 5 ${r2} \
-       --out ./snplist/${pop}_prune_pval${pval}_r2${r2}_wc${wc}_${i}
+# PLINK 2.0
+module load PLINK/1.9
+
+i=1
+pval=1
+r2=0.5
+wc=250
+
+for pop in EUR EAS AFR SAS AMR; do
+  plink --bfile ./1000g_phase3_data/geno_data/${pop} \
+        --indep-pairwise ${wc} 5 ${r2} \
+        --out ./snplist/${pop}_prune_pval${pval}_r2${r2}_wc${wc}_${i}
 done
 ```
 
