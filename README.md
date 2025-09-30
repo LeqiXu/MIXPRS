@@ -90,7 +90,6 @@ plink2 --bfile ./1000g_phase3_data/geno_data/${pop} \
        --out ./snplist/${pop}_prune_pval${pval}_r2${r2}_wc${wc}_${i}
 done
 ```
-You can adjust these parameters or apply the commands to other genotype datasets according to your analytical needs.
 
 ### 4. Summary Statistics Preparation
 We require GWAS summary statistics provided as input to MIXPRS to follow the format below (including the header line):
