@@ -39,8 +39,12 @@ conda activate MIXPRS
 > **Note:** On some clusters, `conda env create` may take longer due to package resolution.
 > For faster installation, you may:
 >
-> * Use [mamba](https://github.com/mamba-org/mamba) instead of conda, or
-> * Install via pip with:
+> * Use [mamba](https://github.com/mamba-org/mamba) instead of conda:
+>
+>   ```bash
+>   mamba env create -f environment.yml
+>   ```
+> * Or install via pip with:
 >
 >   ```bash
 >   pip install -r requirements.txt
