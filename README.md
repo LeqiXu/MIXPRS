@@ -36,7 +36,14 @@ cd MIXPRS
 conda env create -f environment.yml
 conda activate MIXPRS
 ```
-
+> **Note:** On some clusters, `conda env create` may take longer due to package resolution.
+> As a faster alternative, you can install [mamba](https://github.com/mamba-org/mamba) into your base environment:
+>
+> ```bash
+> conda install -n base -c conda-forge mamba
+> mamba env create -f environment.yml
+> conda activate MIXPRS
+> ```
 After this, you only need to use
 ```
 conda activate MIXPRS
