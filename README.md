@@ -74,7 +74,7 @@ Then place the downloaded LD reference panels and the SNP information file into 
 ### 3. Pruned SNP List Preparation
 In the `MIXPRS` repository, we provide [precomputed pruned SNP lists](snplist) for five populations (EUR, EAS, AFR, SAS, and AMR), derived from genotype data of the [Phase-3 1000 Genomes Project](https://www.internationalgenome.org/data). These SNP lists were generated using PLINK2 with parameters: window size = 250, step size = 5, and correlation threshold $r^2 = 0.5$.
 
-To replicate our results or generate customized pruned SNP lists, use the following PLINK2 commands:
+To generate customized pruned SNP lists, use the following PLINK2 commands:
 ```bash
 module load PLINK/2
 
@@ -121,9 +121,9 @@ Before running MIXPRS, ensure these datasets are ready (see previous sections):
 * **GWAS Summary Statistics (Section 4).**
 
 Example assumptions:
-* 1KG LD panel used.
-* Precomputed pruned SNP lists from MIXPRS repository (`snplist`).
-* Formatted GWAS summary statistics `${trait}_${pop}_MIXPRS_sumstat.txt`. We provide an example summary statistics dataset for EAS HDL (500 SNPs on chromosome 1) within the cloned MIXPRS repository (`example_data` folder), obtained from [GLGC](https://csg.sph.umich.edu/willer/public/glgc-lipids2021/).
+* [1KG LD panel]((https://github.com/getian107/PRScsx#getting-started)) used.
+* [Precomputed pruned SNP lists](snplist) from MIXPRS repository.
+* Formatted GWAS summary statistics `${trait}_${pop}_MIXPRS_sumstat.txt`. We provide an [example summary statistics dataset](example_data) for EAS HDL (500 SNPs on chromosome 1) within the cloned MIXPRS repository (`example_data` folder), obtained from [GLGC](https://csg.sph.umich.edu/willer/public/glgc-lipids2021/).
 
 #### Step1: GWAS subsampling in MIXPRS
 This step partitions a single original GWAS dataset into independent subsampled training and tuning GWAS datasets using data fission principles for the target population (`pop`).
