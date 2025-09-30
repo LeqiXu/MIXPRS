@@ -91,7 +91,7 @@ for pop in EUR EAS AFR SAS AMR; do
          --out ./snplist/${pop}_prune_pval${pval}_r2${r2}_wc${wc}_${i}
 done
 
-# PLINK 2.0
+# PLINK 1.9
 module load PLINK/1.9
 
 i=1
