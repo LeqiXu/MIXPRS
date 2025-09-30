@@ -36,12 +36,6 @@ cd MIXPRS
 conda env create -f environment.yml
 conda activate MIXPRS
 ```
-
-After this, you only need to use
-```
-conda activate MIXPRS
-```
-
 > **Note:** On some clusters, `conda env create` may take longer due to package resolution.
 > For faster installation, you may:
 >
@@ -51,6 +45,11 @@ conda activate MIXPRS
 >   ```bash
 >   pip install -r requirements.txt
 >   ```
+
+After this, you only need to use
+```
+conda activate MIXPRS
+```
 
 ### 2. LD Reference Panel Download
 We use reference panels from [PRS-CSx](https://github.com/getian107/PRScsx#getting-started) and you can follow their instructions to download them. It is strongly recommended to create two subfolders within your reference directory:
