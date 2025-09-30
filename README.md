@@ -29,8 +29,7 @@ For full details of codes, see the [MIXPRS_analysis repository](https://github.c
 In this section, we provide detailed, step-by-step instructions for implementing MIXPRS. Please replace all placeholders with the appropriate paths and filenames specific to your computing environment.
 
 ### 1. MIXPRS Installation
-For the first time, you need to use the following code to install MIXPRS:
-(using [conda](https://docs.conda.io/) for environment management):
+For the first time, you need to use the following code to install MIXPRS (using [conda](https://docs.conda.io/) for environment management):
 ```
 git clone https://github.com/LeqiXu/MIXPRS.git
 cd MIXPRS
