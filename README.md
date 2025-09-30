@@ -72,7 +72,7 @@ We use reference panels from [PRS-CSx](https://github.com/getian107/PRScsx#getti
 Then place the downloaded LD reference panels and the SNP information file into their corresponding subfolders.
 
 ### 3. Pruned SNP List Preparation
-In the `MIXPRS` repository, we provide precomputed pruned SNP lists for five populations (EUR, EAS, AFR, SAS, and AMR), derived from genotype data of the [Phase-3 1000 Genomes Project](https://www.internationalgenome.org/data). These SNP lists were generated using PLINK2 with parameters: window size = 250, step size = 5, and correlation threshold $r^2 = 0.5$.
+In the `MIXPRS` repository, we provide [precomputed pruned SNP lists](snplist) for five populations (EUR, EAS, AFR, SAS, and AMR), derived from genotype data of the [Phase-3 1000 Genomes Project](https://www.internationalgenome.org/data). These SNP lists were generated using PLINK2 with parameters: window size = 250, step size = 5, and correlation threshold $r^2 = 0.5$.
 
 To replicate our results or generate customized pruned SNP lists, use the following PLINK2 commands:
 ```bash
