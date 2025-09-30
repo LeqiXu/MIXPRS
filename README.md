@@ -30,6 +30,7 @@ In this section, we provide detailed, step-by-step instructions for implementing
 
 ### 1. MIXPRS Installation
 For the first time, you need to use the following code to install MIXPRS:
+(using [conda](https://docs.conda.io/) for environment management):
 ```
 git clone https://github.com/LeqiXu/MIXPRS.git
 cd MIXPRS
@@ -44,7 +45,7 @@ conda activate MIXPRS
 >   ```bash
 >   mamba env create -f environment.yml
 >   ```
-> * Or install via pip with:
+> * Or install via [pip](https://pip.pypa.io/) with:
 >
 >   ```bash
 >   pip install -r requirements.txt
