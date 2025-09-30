@@ -69,10 +69,10 @@ We use reference panels from [PRS-CSx](https://github.com/getian107/PRScsx#getti
     * `ldblk_ukbb_chr1.hdf5` through `ldblk_ukbb_chr22.hdf5`
     * `snpinfo_ukbb_hm3`
 
-Then place the downloaded LD reference panels and the SNP information file into their corresponding subfolders.
+Then place the downloaded LD reference panels and the SNP information file into their corresponding subfolders. All LD reference panels provided and used here are based on the GRCh37 (hg19) human genome build.
 
 ### 3. Pruned SNP List Preparation
-We provide [precomputed pruned SNP lists](snplist) for five populations (EUR, EAS, AFR, SAS, and AMR), derived from genotype data of the [Phase-3 1000 Genomes Project](https://www.internationalgenome.org/data). These SNP lists were generated using PLINK2 with parameters: window size = 250, step size = 5, and correlation threshold $r^2 = 0.5$. Users can directly use these provided SNP lists for PRS analyses without additional processing.
+We provide [precomputed pruned SNP lists](snplist) for five populations (EUR, EAS, AFR, SAS, and AMR), derived from genotype data of the [Phase-3 1000 Genomes Project](https://www.internationalgenome.org/data). These SNP lists were generated using PLINK2 with parameters: window size = 250, step size = 5, and correlation threshold $r^2 = 0.5$. Users can directly use these provided SNP lists for PRS analyses without additional processing. These precomputed SNP lists are aligned to GRCh37 (hg19).
 
 For advanced users who wish to generate customized pruned SNP lists with different pruning parameters, we also provide the following PLINK2 commands as an example:
 ```bash
@@ -111,6 +111,7 @@ Here
 *  `Z`: Z-score (BETA divided by SE).
 *  `P`: P-value of the effect size, which is used to calculate the standardized effect size.
 *  `N`: GWAS sample size.
+Input GWAS summary statistics should be aligned to GRCh37 (hg19) to match the provided SNP lists and LD reference panels.
 
 ### 5. MIXPRS Implementation
 #### Step 0: MIXPRS data preparation
