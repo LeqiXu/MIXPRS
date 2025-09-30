@@ -119,10 +119,10 @@ Before running MIXPRS, ensure these datasets are ready (see previous sections):
 * **Pruned SNP List (Section 3).**
 * **GWAS Summary Statistics (Section 4).**
 
-Example assumptions:
+Examples:
 * [1KG LD panel](https://github.com/getian107/PRScsx#getting-started).
 * [Precomputed pruned SNP lists](snplist).
-* [example summary statistics dataset](example_data) for EAS HDL (500 SNPs on chromosome 1), obtained from [GLGC](https://csg.sph.umich.edu/willer/public/glgc-lipids2021/).
+* [Example summary statistics dataset](example_data) for EAS HDL (500 SNPs on chromosome 1), obtained from [GLGC](https://csg.sph.umich.edu/willer/public/glgc-lipids2021/).
 
 #### Step1: GWAS subsampling in MIXPRS
 This step partitions a single original GWAS dataset into independent subsampled training and tuning GWAS datasets using data fission principles for the target population (`pop`).
