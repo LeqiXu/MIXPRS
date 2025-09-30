@@ -36,14 +36,6 @@ cd MIXPRS
 conda env create -f environment.yml
 conda activate MIXPRS
 ```
-> **Note:** On some clusters, `conda env create` may take longer due to package resolution.
-> For faster installation, you may:
->
-> install via [pip](https://pip.pypa.io/) with:
->
->   ```bash
->   pip install 
->   ```
 
 After this, you only need to use
 ```
