@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/984841794.svg)](https://doi.org/10.5281/zenodo.19599992)
 # MIXPRS
 MIXPRS is a data fission-based multi-population PRS integration framework designed to effectively combine PRS derived from multiple populations and methods. This framework is described in detail in:
 
