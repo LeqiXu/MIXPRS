@@ -300,4 +300,4 @@ This command produces two results files in the specified output directory (`${ou
 Part of the code is adapted from [PRS-CSx](https://github.com/getian107/PRScsx/tree/master). We thank Dr. Tian Ge for sharing his code and LD reference panels.
 
 ## Support
-Please direct any problems or questions to Leqi Xu (leqi.xu@yale.edu).
+Please direct any problems or questions to Leqi Xu (leqixu@ust.hk).
