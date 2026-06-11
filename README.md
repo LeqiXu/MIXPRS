@@ -2,7 +2,7 @@
 # MIXPRS
 MIXPRS is a data fission-based multi-population PRS integration framework designed to effectively combine PRS derived from multiple populations and methods. This framework is described in detail in:
 
-- **Xu, L., Dong, Y., Zeng, X., Bian, Z., Zhou, G., Guan, L., & Zhao, H. (2025). Almost Free Enhancement of Multi-Population PRS: From Data-Fission to Pseudo-GWAS Subsampling. bioRxiv, 2025-06.**
+- **Xu, L., Dong, Y., Zeng, X., Bian, Z., Zhou, G., Guan, L., & Zhao, H. (2026). MIXPRS enables multi-population and multi-method polygenic risk scores using summary statistics. Nature Genetics. https://doi.org/10.1038/s41588-026-02637-4**
 
 The MIXPRS pipeline requires **only GWAS summary statistics and LD reference panels**, and involves three main steps (Figure 1):
 
